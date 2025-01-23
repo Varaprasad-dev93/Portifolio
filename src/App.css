@@ -1,0 +1,19 @@
+#root{
+  margin: 0%;
+  padding: 0%;
+}
+html{
+  /* overflow-x: hidden; */
+  scrollbar-width: none;
+}
+body{
+  background-image: url('src/assets/cubeMap/nx.png');
+  color:white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 
+  0 0 5px lightblue,
+  0 0 10px lightblue
+  ;
+  letter-spacing: 1.2px;
+  user-select: none;
+}
