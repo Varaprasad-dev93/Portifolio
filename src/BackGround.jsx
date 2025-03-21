@@ -35,9 +35,9 @@ export default function BackGround() {
         },[])
         useFrame(({camera})=>{
           if(sphereRef.current){
-            target.set(mouse.x,mouse.y,1).unproject(camera);
+            target.set(mouse.x+1,mouse.y,1).unproject(camera);
             sphereRef.current.lookAt(target);
-            sphereRef.current.position.y=2.5+Math.sin(Inc)/8;
+            sphereRef.current.position.y=-0.5+Math.sin(Inc)/8;
             Inc=Inc+0.02;
           }
         })
@@ -47,16 +47,16 @@ export default function BackGround() {
             position={[-3,0,0]}
             // onPointerEnter={<a href='www.google.com'></a>} 
             >
-                <sphereGeometry args={[1,32,32]}></sphereGeometry>
+                <sphereGeometry args={[2.5,32,32]}></sphereGeometry>
                 <meshStandardMaterial 
                 map={texture}
-                metalness={2.5}
+                metalness={0.5}
                 roughness={1}
                 envMap={EnvMap}
                 // transparent={true}
-                opacity={1}
+                // opacity={1}
                 ></meshStandardMaterial>
-                <ambientLight intensity={0.2} color={'white'}/>
+                <ambientLight intensity={0} color={'white'}/>
             </mesh>
         )
     }

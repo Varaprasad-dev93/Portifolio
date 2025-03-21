@@ -33,10 +33,10 @@ export default function Cursor() {
       if(e.target.tagName.toLowerCase()=='button'||
       e.target.tagName.toLowerCase()=='img'||
       e.target.tagName.toLowerCase()=='a'||
-      e.target.style.cursor=='pointer'
+      e.target.tagName.toLowerCase()=='span'
     ){
         mouseRef.current.style.scale=2;
-        mouseRef.current.style.backgroundColor='white'
+        mouseRef.current.style.backgroundColor='white';
       }
       else{
         mouseRef.current.style.scale=1;

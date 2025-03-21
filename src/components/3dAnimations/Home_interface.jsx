@@ -6,7 +6,7 @@ Command: npx gltfjsx@6.5.3 public/Home_interface.gltf
 import React from 'react'
 import { motion } from 'framer-motion-3d'
 import { useGLTF, useTexture, ScrollControls } from '@react-three/drei'
-import vara from './public/Textures/Vara.jpg'
+import vara from '../../assets/Vara.jpg'
 import * as THREE from 'three'
 export default function Home_interface(props) {
   const group = React.useRef()

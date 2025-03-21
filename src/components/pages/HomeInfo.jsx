@@ -22,6 +22,7 @@ border:1px solid white;
 borderRadius:10%;
 `
 const Buttons=()=>{
+  const ResumePdf=import.meta.env.VITE_RESUMEPDF;
   return (
     <Button>
       <A
@@ -37,7 +38,7 @@ const Buttons=()=>{
         duration:1.5,
         delay:1.5
       }}
-       href={{resume}} download="Resume.pdf">Resume</A>
+       href={{ResumePdf}}>Resume</A>
       <A
       initial={{
         opacity:0,
@@ -60,7 +61,7 @@ const MoveWords=()=>{
   const tyInsta=useRef(null);
   useEffect(()=>{
     const options={
-      strings:['Web Designer,',"Programmer,",'Developer,','3d-web designer,'],
+      strings:['Web Designer,',"Programmer,",'Full Stack Developer,','3d-web designer,'],
       backSpace:50,
       loop:true,
       typeSpeed:50,
@@ -77,7 +78,7 @@ const MoveWords=()=>{
       <motion.h1 style={{
         'fontSize':'50px',
         // 'backgroundColor':'rgba(0,0,0,0.5)',
-        'color':'black',
+        'color':'text-gray-200',
         'width':'40%',
         'padding':'10px',
         'borderRadius':'10%'
@@ -95,7 +96,7 @@ const MoveWords=()=>{
           delay:1
         }}
         >Vara Prasad K</motion.h1><br/>
-       <motion.h2
+       <motion.h2 className="text-2xl md:text-3xl mt-4"
        initial={{
         opacity:0,
         y:25,
@@ -122,9 +123,7 @@ const MoveWords=()=>{
         duration:1.5,
         delay:2
       }}
-       >I am a currenrtly pursuing at 
-        <b> Rvr and jc college of engineering </b> 
-         Computer Science and Eng department.I am a person who is eager to learn and adapt to new technologies</motion.p>
+       >🎓 I am a Computer Science and Engineering student at <b>RVR & JC College of Engineering</b>. With a strong foundation in software development, I am passionate about exploring and adapting to new technologies. I thrive on solving complex problems, continuously expanding my skill set, and staying updated with the latest advancements in the tech world. My enthusiasm for learning drives me to take on new challenges and contribute meaningfully to innovative projects.</motion.p>
       </>
     )
 };

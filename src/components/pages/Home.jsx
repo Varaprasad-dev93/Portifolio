@@ -1,11 +1,9 @@
 import { OrbitControls, useTexture } from '@react-three/drei'
 import { Canvas, useFrame } from '@react-three/fiber'
 import React, { useEffect, useRef, useState } from 'react'
-import VaraImg from '../../../src/assets/Vara.jpg'
 import styled from 'styled-components'
 import HomeInfo from './HomeInfo'
-import Home_interface from '../../../Home_interface'
-import Shipping from '../../../Shipping'
+import Home_interface from '../3dAnimations/Home_interface'
 import Main from '../3dAnimations/Main'
 const Div=styled.div`
 width:100%;

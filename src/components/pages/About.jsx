@@ -10,9 +10,7 @@ margin-top:10%;
 margin-top:20%;
 z-index:3;
 transition:2s;
-@media (max-width : 768px){
-top:40%;
-}
+width:90%;
 }
 `
 const H4=styled(motion.h4)`
@@ -27,29 +25,34 @@ border-right:none;
 export default function About() {
   const skills=[
     {
-      'name':'Html',
-      'value':'90%',
-      'level':'Intermedialte'
-    },
-    {
-      'name':'Css',
-      'value':'90%',
-        'level':'Intermedialte'
-    },
-    {
-      'name':'Javascript',
-      'value':'85%',
-      'level':'Intermedialte'
-    },
-    {
       'name':'React js',
       'value':'80%',
       'level':'Intermedialte'
     },
     {
+      "name":"scoket.io",
+      "value":"70%",
+      "level":'Intermediate'
+    },
+    {
+      "name":"express",
+      "value":"70%",
+      "level":'Intermediate'
+    },
+    {
       'name':'python',
       'value':'70%',
       'level':'Intermedialte'
+    },
+    {
+      'name':'numpy',
+      'value':'80%',
+      'level':'Intermediate'
+    },
+    {
+      'name':'pandas',
+      'value':'75%',
+      'level':'Intermediate'
     },
     {
       'name':'C',
@@ -74,7 +77,7 @@ export default function About() {
       <div key={index} style={{
         'marginBottom':'50px'
       }}>
-      <H4
+      <H4 className='text-xl'
       initial={{
         x:-25,
         opacity:0
@@ -87,7 +90,7 @@ export default function About() {
         duration:2,
         delay:1
       }}
-      >{skill.name}--{skill.level}</H4>
+      >{skill.name}--<span className='text-[10px]'>{skill.level}</span></H4>
       <P style={{'width':`${skill.value}`}}
       initial={{
         scaleX:0,
@@ -108,7 +111,7 @@ export default function About() {
   const Skills=()=>{
     return(
       <div>
-        <h1 style={{'padding':'10px','marginTop':'10px','textDecoration':'underline'}}>Skills/Tools</h1>
+        <h1 className='!mt-[20px] !p-[10px] text-2xl !underline'>Skills/Tools</h1>
         {
           skills.map((skill,index)=>(
             // console.log(index);
@@ -123,7 +126,7 @@ export default function About() {
       {
         'name':'RVR and JC college of engineering',
         'course':'Btech',
-        'score':'8.8',
+        'score':'8.7',
         'complete':'2022-2026'
       },
       {
@@ -134,7 +137,7 @@ export default function About() {
       },
       {
         'name':'ZP High School Thimmayapalem',
-        'course':'',
+        'course':'10th',
         'score':'95%',
         'complete':"2019-2020"
       }
@@ -146,7 +149,7 @@ export default function About() {
           <div key={course.index} style={{
             'marginBottom':'20px'
           }}>
-            <H4
+            <H4 className='text-xl'
              initial={{
               opacity:0
             }}
@@ -181,7 +184,7 @@ export default function About() {
     }
     return(
       <div>
-        <h1 style={{'padding':'10px','marginTop':'10px','textDecoration':'underline'}}>Education</h1>
+        <h1 className='!mt-[20px] !p-[10px] text-2xl !underline'>Education</h1>
           {
             edu.map((course,index)=>(
               <Edu course={course} index={index}/>
@@ -192,7 +195,9 @@ export default function About() {
   }
   return (
     <>
-    <Div >
+    <Div>
+      <h1 className="text-4xl !pl-[20%] !pb-[5%] !underline">About Me</h1>
+      <p className='md:w-[50%] sm:w-[90%]'>🚀 I am a passionate and eager-to-learn student seeking an internship in web development. I have hands-on experience with frontend technologies like ⚛️ React and 🎨 Three.js for 3D interactions, along with 🏗️ Blender for 3D modeling. On the backend, I am proficient in 🖥️ Express, 🔗 Socket.io, 🔒 bcrypt, and 🗂️ Mongoose for building scalable and secure applications. Currently, I am expanding my knowledge in 📊 data science, 🤖 machine learning, and 🧠 AI. I am always excited to take on new challenges and grow as a developer!</p>
       <Education/>
       <Skills/>
     </Div>
