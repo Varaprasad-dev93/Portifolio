@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import Typed from 'typed.js';
-import resume from '../../assets/Resume.pdf'
 import {motion} from 'framer-motion'
 const Div=styled.div`
 position:absolute;
