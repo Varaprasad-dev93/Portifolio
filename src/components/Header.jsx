@@ -42,7 +42,7 @@ z-index:2;
     padding:60px;
     margin-top:60px;
     backdrop-filter: blur(16px); 
-    background: rgba(255, 255, 255, 0.1); 
+    background: rgba(255, 255, 255, 0.3); 
     border: 1px solid rgba(255, 255, 255, 0.2); 
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
@@ -52,13 +52,6 @@ z-index:2;
     gap:2px;
     left: 55%; 
   }
-`;
-const Span=styled.span`
-padding:0 20px;
-width:100%;
-text-decoration: none;
-color:white;
-z-index:2;
 `;
 const Display=()=>{
   const [show,setShow]=useState(true);
@@ -77,6 +70,10 @@ const Display=()=>{
       return ()=>{window.removeEventListener('resize',Menu)}
     });
   },[])
+const handleClick=()=>{
+  setShow(false);
+}
+
   return(
     <>
     <Img title={show?'Close-Menu':'Show-Menu'}
@@ -91,9 +88,10 @@ const Display=()=>{
         <li>
           <NavLink
             to="/"
+            onClick={handleClick}
             className={({ isActive }) =>
               `flex items-center transition-all gap-3 duration-300 rounded-lg ${
-                isActive ? "underline text-white" : "text-gray-400"
+                isActive ? "!underline text-white " : "text-gray-400 "
               } hover:text-gray-100`
             }
           >
@@ -105,6 +103,7 @@ const Display=()=>{
         <li>
           <NavLink
             to="/Projects"
+            onClick={handleClick}
             className={({ isActive }) =>
               `flex items-center transition-all gap-3 duration-300 rounded-lg ${
                 isActive ? " text-white" : "text-gray-400"
@@ -119,6 +118,7 @@ const Display=()=>{
         <li>
           <NavLink
             to="/About"
+            onClick={handleClick}
             className={({ isActive }) =>
               `flex items-center transition-all gap-3 duration-300 rounded-lg ${
                 isActive ? "underline text-white" : "text-gray-400"
@@ -133,6 +133,7 @@ const Display=()=>{
         <li>
           <NavLink
             to="/Contact"
+            onClick={handleClick}
             className={({ isActive }) =>
               `flex items-center transition-all gap-3 duration-300 rounded-lg ${
                 isActive ? "underline text-white" : "text-gray-400"
@@ -148,7 +149,7 @@ const Display=()=>{
 }
 export default function Header() {
   return (
-    <Head className=' h-[12%] backdrop-blur-lg bg-white/10 border border-white/20 rounded-2xl shadow-lg transition-transform duration-300'>
+    <Head className=' h-[12%] backdrop-blur-lg bg-white/30 border border-white/20 rounded-2xl shadow-lg transition-transform duration-300'>
         <h1 className='text-3xl flex'>Portifilo<HeartPulse className='animate-pulse !mt-2 font-bold text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'/></h1>
         {/* <BackGround/> */}
         <Display/>

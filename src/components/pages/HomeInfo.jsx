@@ -8,6 +8,9 @@ position:absolute;
 top:55%;
 padding:5%;
 z-index:2;
+@media(max-width:768px){
+width:100%;
+}
 `;
 const Button=styled.div`
   padding:30px;
@@ -75,14 +78,7 @@ const MoveWords=()=>{
   },[])
     return (
       <>
-      <motion.h1 style={{
-        'fontSize':'50px',
-        // 'backgroundColor':'rgba(0,0,0,0.5)',
-        'color':'text-gray-200',
-        'width':'40%',
-        'padding':'10px',
-        'borderRadius':'10%'
-      }}
+      <motion.h1 className="text-6xl text-gray-200 md:w-[50%] !p-[10px] rounded-[10%]"  
         initial={{
           opacity:0,
           y:25,
@@ -96,7 +92,7 @@ const MoveWords=()=>{
           delay:1
         }}
         >Vara Prasad K</motion.h1><br/>
-       <motion.h2 className="text-2xl md:text-3xl mt-4"
+       <motion.h2 className="text-2xl md:text-3xl mt-4 "
        initial={{
         opacity:0,
         y:25,
@@ -110,7 +106,7 @@ const MoveWords=()=>{
         delay:1.5
       }}
        >I'm a <span ref={tyRef}></span></motion.h2><br/>
-       <motion.p style={{'width':'60%'}}
+       <motion.p className="md:w-[60%]"
        initial={{
         opacity:0,
         y:25,

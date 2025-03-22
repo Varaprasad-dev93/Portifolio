@@ -8,7 +8,6 @@ left:10%;
 margin-top:10%;
 @media (max-width:768px){
 margin-top:20%;
-z-index:3;
 transition:2s;
 width:90%;
 }
