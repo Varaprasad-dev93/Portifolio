@@ -4,7 +4,7 @@ import styled from "styled-components";
 import flappyBird from "../../assets/Flappybird.jpg";
 import Planets from "../../assets/planetary.jpeg";
 import ChatImg from "../../assets/meetme.png";
-import RoboImg from "../../assets/Robob.png"
+import RoboImg from "../../assets/Robo.png"
 export default function Projects() {
   const projects = [
     {
