@@ -4,6 +4,7 @@ import styled from "styled-components";
 import flappyBird from "../../assets/Flappybird.jpg";
 import Planets from "../../assets/planetary.jpeg";
 import ChatImg from "../../assets/meetme.png";
+import RoboImg from "../../assets/Robob.png"
 export default function Projects() {
   const projects = [
     {
@@ -22,7 +23,7 @@ Whether you're collaborating on projects, troubleshooting code, or seeking AI-po
     },
     {
       name: "Voice Translator",
-      img: "",
+      img: RoboImg,
       type: "Translation",
       link: "https://voicetranslating.netlify.app/",
       githublink: "https://github.com/Varaprasad-dev93/Voice-Translation.git",
