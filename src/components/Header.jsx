@@ -71,7 +71,9 @@ const Display=()=>{
     });
   },[])
 const handleClick=()=>{
-  setShow(false);
+  if(window.innerWidth<768){
+    setShow(false);
+  }
 }
 
   return(
