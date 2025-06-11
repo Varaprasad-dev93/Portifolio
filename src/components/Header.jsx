@@ -39,10 +39,14 @@ z-index:2;
     flex-direction:column;
     display:none;
     left:60%;
+    color:black;
+    position:fixed;
+    font-size:1.2rem;
+    font-weight:bold;
     padding:60px;
     margin-top:60px;
-    backdrop-filter: blur(16px); 
-    background: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(20px); 
+    background: rgba(255, 255, 255, 0.5); 
     border: 1px solid rgba(255, 255, 255, 0.2); 
     border-radius: 16px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
@@ -84,7 +88,7 @@ const handleClick=()=>{
     alt="img" width='25px' 
     onClick={()=>{console.log(show);setShow(!show)}}
     />
-    <Links style={{'display':show?'flex':'none'}} className='list-none !gap-15'
+    <Links style={{'display':show?'flex':'none'}} className={`list-none !gap-10 ${!show?'bg-black/30 backdrop-blur-lg border border-white/20 rounded-2xl shadow-lg transition-transform duration-300' : 'hidden'}`}
     >
       {/* Home */}
         <li>
@@ -152,7 +156,7 @@ const handleClick=()=>{
 export default function Header() {
   return (
     <Head className=' h-[12%] backdrop-blur-lg bg-white/30 border border-white/20 rounded-2xl shadow-lg transition-transform duration-300'>
-        <h1 className='text-3xl flex'>Portifilo<HeartPulse className='animate-pulse !mt-2 font-bold text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'/></h1>
+        <h1 className='text-3xl flex'>Portfolio<HeartPulse className='animate-pulse !mt-2 font-bold text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]'/></h1>
         {/* <BackGround/> */}
         <Display/>
     </Head>

@@ -4,22 +4,37 @@ import styled from "styled-components";
 import flappyBird from "../../assets/Flappybird.jpg";
 import Planets from "../../assets/planetary.jpeg";
 import ChatImg from "../../assets/meetme.png";
-import RoboImg from "../../assets/Robob.png"
+import RoboImg from "../../assets/Robo.png";
+import AiImageHubImg from "../../assets/Lovable.jpg"
 export default function Projects() {
   const projects = [
     {
-      name: "chatAll",
+  name: "AI Image Hub",
+  img: AiImageHubImg,
+  type: "AI-Powered Image Platform",
+  githublink: "https://github.com/Varaprasad-dev93/aiimagehub", // update if different
+  link: "https://aiimagehub.netlify.app", // update if different
+  description: `AI Image Hub is an intelligent platform that combines web scraping and AI image generation into one seamless experience.
+🔹 AI Image Generator – Create stunning visuals from text prompts using deep learning APIs.
+🔹 URL Scraper – Extract and download images from any public website, packaged into a ZIP file.
+🔹 Smart Chat Assistant – Get creative prompt suggestions and explore image generation ideas with ease.
+🔹 Responsive UI – Built with React and Tailwind CSS for a smooth, mobile-friendly experience.
+
+From creative exploration to rapid prototyping, AI Image Hub empowers users to interact with visual AI in a fun and practical way! 🎨🤖`,
+},
+    {
+      name: "DevChat",
       img: ChatImg,
       type: "Chat application",
       githublink: "https://github.com/Varaprasad-dev93/fullStackChatApp.git",
       link: "https://fullstackchatapp-3je7.onrender.com",
-      description: `ChatAll is a versatile web application that combines an online code editor with real-time chat functionality.
+      description: `DevChat is a versatile web application that combines an online code editor with real-time chat functionality.
 🔹 Code Editor – Write, compile, and run Python, C, C++, and Java directly in your browser.
 🔹 User Chat – Connect with other programmers and discuss coding ideas.
 🔹 AI Chatbot – Get instant coding help from an AI-powered assistant.
 🔹 Seamless Login – Securely log in to access personalized features.
 
-Whether you're collaborating on projects, troubleshooting code, or seeking AI-powered coding assistance, ChatAll provides a smooth and interactive experience for developers of all levels! 🚀`,
+Whether you're collaborating on projects, troubleshooting code, or seeking AI-powered coding assistance, DevChat provides a smooth and interactive experience for developers of all levels! 🚀`,
     },
     {
       name: "Voice Translator",
