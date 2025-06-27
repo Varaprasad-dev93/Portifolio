@@ -37,6 +37,23 @@ From creative exploration to rapid prototyping, AI Image Hub empowers users to i
 Whether you're collaborating on projects, troubleshooting code, or seeking AI-powered coding assistance, DevChat provides a smooth and interactive experience for developers of all levels! 🚀`,
     },
     {
+  name: "TailorTalk Calendar Assistant",
+  img: "https://logowik.com/content/uploads/images/calendar5662.jpg", 
+  type: "Conversational Calendar Agent",
+  githublink: "#",
+  link: "https://tailortalkcalenderagent-pynmfzssjsqs5q6jmkvnby.streamlit.app/",
+  description: `TailorTalk is an AI-powered conversational agent that helps users schedule appointments effortlessly via chat.
+🔹 Natural Language Booking – Understands casual language like “tomorrow afternoon” or “next Friday evening”.
+🔹 Smart Slot Suggestions – Automatically checks Google Calendar and suggests available time slots.
+🔹 Seamless Confirmation – Handles the entire scheduling flow from intent to booking, through natural dialogue.
+🔹 Built with LangGraph – Manages complex conversational states using LangGraph's powerful flow engine.
+🔹 Streamlit UI – Simple, chat-based interface powered by Streamlit and FastAPI.
+
+🎯 Designed as part of an AI assignment project, TailorTalk demonstrates the real-world potential of conversational agents in daily productivity tools.
+
+⚠️ *Note: GitHub link is not shared publicly as the repository contains sensitive calendar API and deployment credentials.*`,
+    },
+    {
       name: "Voice Translator",
       img: RoboImg,
       type: "Translation",
