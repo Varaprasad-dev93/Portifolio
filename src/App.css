@@ -1,19 +1,4 @@
-#root{
-  margin: 0%;
-  padding: 0%;
-}
-html{
-  /* overflow-x: hidden; */
-  scrollbar-width: none;
-}
-body{
-  background-image: url('/nx.png');
-  color:white;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-shadow: 
-  0 0 2px lightblue,
-  0 0 2px rgb(54, 58, 59)
-  ;
-  letter-spacing: 1.2px;
-  user-select: none;
+#root {
+  min-height: 100vh;
+  position: relative;
 }
