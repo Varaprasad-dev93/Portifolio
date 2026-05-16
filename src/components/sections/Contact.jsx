@@ -95,19 +95,19 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" style={{ padding: '96px 48px 64px' }}>
-      <div className="max-w-6xl mx-auto">
+    <section id="contact" className="!px-2 !mt-10 !pt-10 flex flex-col justify-center items-center">
+      <div className="max-w-6xl !mx-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center"
+          className="text-center flex flex-col justify-center items-center gap-3"
           style={{ marginBottom: '64px' }}
         >
           <p
-            className="text-sm font-semibold tracking-widest uppercase mb-3"
+            className="text-sm font-semibold tracking-widest uppercase !mb3"
             style={{ color: '#00d4ff' }}
           >
             Get in touch
@@ -124,7 +124,7 @@ export default function Contact() {
           </h2>
           <div className="section-divider" style={{ marginTop: '16px' }} />
           <p
-            className="mt-6 max-w-lg mx-auto text-base leading-relaxed"
+            className="mt-6 max-w-lg  text-base leading-relaxed"
             style={{ color: '#64748b' }}
           >
             Open to internship opportunities, collaborations, and interesting
@@ -147,13 +147,13 @@ export default function Contact() {
               style={{ color: '#00d4ff', marginBottom: '16px' }}
             />
             <h3
-              className="text-xl font-bold mb-2"
+              className="text-xl font-bold !mb2"
               style={{ color: '#ffffff' }}
             >
               Let&apos;s Connect
             </h3>
             <p
-              className="text-sm leading-relaxed mb-8"
+              className="text-sm leading-relaxed !mb8"
               style={{ color: '#475569' }}
             >
               Whether you have a project in mind, want to discuss ideas, or
@@ -215,7 +215,7 @@ export default function Contact() {
             style={{ padding: '32px' }}
           >
             <h3
-              className="text-xl font-bold mb-6"
+              className="text-xl font-bold !mb-6"
               style={{ color: '#ffffff' }}
             >
               Send a Message

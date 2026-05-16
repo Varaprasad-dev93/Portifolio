@@ -62,8 +62,7 @@ export default function About() {
   return (
     <section
       id="about"
-      style={{ padding: "96px 48px" }}
-      className="flex items-center justify-center flex-col"
+      className="flex items-center justify-center flex-col !pt-10 !px-2"
     >
       {/* Section header */}
       <motion.div
@@ -75,7 +74,7 @@ export default function About() {
         style={{ marginBottom: "64px" }}
       >
         <p
-          className="text-sm font-semibold tracking-widest uppercase mb-3"
+          className="text-sm font-semibold tracking-widest uppercase !mb-3"
           style={{ color: "#00d4ff" }}
         >
           Who I am
@@ -93,7 +92,7 @@ export default function About() {
         <div className="section-divider" style={{ marginTop: "16px" }} />
       </motion.div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
+      <div className="max-w-6xl !mx-auto grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 items-start">
         {/* LEFT SIDE */}
         <div className="flex flex-col gap-6">
           {/* Main Bio Card */}
@@ -103,13 +102,13 @@ export default function About() {
             whileInView="show"
             viewport={{ once: true }}
             custom={0}
-            className="glass relative overflow-hidden rounded-3xl border border-white/10 !p-8 md:p-10"
+            className="glass relative overflow-hidden rounded-3xl border border-white/10 !p-8 md !mt10"
           >
             {/* Glow */}
             <div className="absolute top-0 right-0 w-40 h-40 bg-cyan-500/10 blur-3xl rounded-full" />
 
             {/* Small intro */}
-            <p className="text-sm uppercase tracking-[0.25em] text-cyan-400 font-semibold mb-5">
+            <p className="text-sm uppercase tracking-[0.25em] text-cyan-400 font-semibold !mb5">
               Software Engineer · AI Developer
             </p>
 
@@ -174,7 +173,7 @@ export default function About() {
                 className="glass group rounded-2xl border border-white/5 !p-5 transition-all duration-300 hover:-translate-y-1"
               >
                 <div
-                  className="w-11 h-11 rounded-xl flex items-center justify-center mb-4"
+                  className="w-11 h-11 rounded-xl flex items-center justify-center !mb-4"
                   style={{
                     background: `${color}15`,
                     border: `1px solid ${color}30`,
@@ -185,7 +184,7 @@ export default function About() {
 
                 <h4 className="font-semibold text-white text-sm">{label}</h4>
 
-                <p className="text-xs mt-2 leading-6 text-slate-400">{desc}</p>
+                <p className="text-xs !mt-2 leading-6 text-slate-400">{desc}</p>
               </motion.div>
             ))}
           </div>
@@ -200,7 +199,7 @@ export default function About() {
           custom={2}
           className="glass rounded-3xl border border-white/10 !p-8 md:!p-10 h-full"
         >
-          <div className="flex items-center gap-3 mb-10">
+          <div className="flex items-center gap-3 !mb10">
             <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-400/20 flex items-center justify-center">
               <GraduationCap size={20} className="text-cyan-400" />
             </div>
@@ -223,7 +222,7 @@ export default function About() {
               }}
             />
 
-            <div className="flex flex-col gap-20">
+            <div className="flex flex-col gap-20 !pt-10">
               {education.map((edu, i) => (
                 <motion.div
                   key={i}
@@ -241,9 +240,9 @@ export default function About() {
                     {edu.name}
                   </h4>
 
-                  <p className="text-cyan-400 text-sm mt-1">{edu.degree}</p>
+                  <p className="text-cyan-400 text-sm !mt-1">{edu.degree}</p>
 
-                  <div className="flex items-center gap-4 mt-2 text-xs text-slate-500">
+                  <div className="flex items-center gap-4 !mt-2 text-xs text-slate-500">
                     <span>{edu.years}</span>
 
                     <span className="text-emerald-400 font-semibold">

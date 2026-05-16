@@ -83,14 +83,14 @@ export default function Hero() {
       />
 
       <div
-        className=" max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center !pt-28 !pb-16"
+        className=" max-w-7xl !mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center !pt-28 !pb-16"
       >
         {/* ── Left: Copy ── */}
         <motion.div
           variants={stagger}
           initial="hidden"
           animate="show"
-          className="flex flex-col gap-6 relative z-10 order-2 lg:order-1 !px-16"
+          className="flex flex-col gap-6 relative z-10 order-2 lg:order-1 lg:!px-16 !px-4"
         >
           {/* Availability badge */}
           <motion.div variants={fadeUp} style={{ display: "flex" }}>

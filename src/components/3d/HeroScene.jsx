@@ -7,7 +7,7 @@ import BloomEffect from "./BloomEffect";
 export default function HeroScene() {
   return (
     <Canvas
-      camera={{ position: [-5, 5, -2], fov: 30 }}
+      camera={{ position: [-5, 5, 0], fov: 40 }}
       gl={{
         antialias: true,
         toneMapping: THREE.ACESFilmicToneMapping,

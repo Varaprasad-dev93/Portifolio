@@ -131,7 +131,7 @@ export default function Skills() {
   const activeCategory = CATEGORIES.find((c) => c.label === activeTab)
 
   return (
-    <section id="skills"  className='px-[96px] py-[48px] flex items-center justify-center'>
+    <section id="skills"  className='!px-2  !pt-[48px] flex items-center justify-center'>
       <div className="max-w-6xl w-full">
         {/* Header */}
         <motion.div
@@ -143,7 +143,7 @@ export default function Skills() {
           style={{ marginBottom: '64px' }}
         >
           <p
-            className="text-sm font-semibold tracking-widest uppercase mb-3"
+            className="text-sm font-semibold tracking-widest uppercase !mb3"
             style={{ color: '#00d4ff' }}
           >
             My toolkit

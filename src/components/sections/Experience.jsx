@@ -116,14 +116,14 @@ function TimelineItem({ item, index, showBadge = false }) {
             <h3 className="font-bold text-lg" style={{ color: '#ffffff' }}>
               {item.title}
             </h3>
-            <p className="text-sm font-semibold mt-0.5" style={{ color: item.color }}>
+            <p className="text-sm font-semibold !mt-0.5" style={{ color: item.color }}>
               {item.org}
             </p>
           </div>
           <div className="flex items-center gap-2 flex-wrap justify-end">
             {showBadge && item.badge && (
               <span
-                className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                className="text-xs font-semibold !px-2.5 !py-0.5 rounded-full"
                 style={{
                   background: `${item.color}18`,
                   border: `1px solid ${item.color}40`,
@@ -134,7 +134,7 @@ function TimelineItem({ item, index, showBadge = false }) {
               </span>
             )}
             <span
-              className="text-xs font-medium px-3 py-1 rounded-full"
+              className="text-xs font-medium !px-3 !py-1 rounded-full"
               style={{ background: 'rgba(255,255,255,0.05)', color: '#64748b' }}
             >
               {item.period}
@@ -153,7 +153,7 @@ function TimelineItem({ item, index, showBadge = false }) {
           {item.tags.map((tag) => (
             <span
               key={tag}
-              className="px-2.5 py-0.5 rounded-full text-xs font-medium"
+              className="!px-3 !py-1 rounded-full text-xs font-medium"
               style={{
                 background: `${item.color}0d`,
                 border: `1px solid ${item.color}25`,
@@ -202,9 +202,10 @@ function SubHeader({ label, title, delay = 0 }) {
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay }}
       style={{ marginBottom: '40px' }}
+      className="flex flex-col justify-center items-center"
     >
       <p
-        className="text-xs font-semibold tracking-widest uppercase mb-2"
+        className="text-xs font-semibold tracking-widest uppercase !mb2"
         style={{ color: '#00d4ff' }}
       >
         {label}
@@ -234,8 +235,8 @@ function SubHeader({ label, title, delay = 0 }) {
 
 export default function Experience() {
   return (
-    <section id="experience" style={{ padding: '96px 48px' }}>
-      <div className="max-w-4xl mx-auto flex flex-col justify-center  justify-self-center">
+    <section id="experience" className="!px-2 !pt-10">
+      <div className="max-w-4xl !mx-auto flex flex-col justify-center  justify-self-center">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 28 }}
@@ -246,7 +247,7 @@ export default function Experience() {
           style={{ marginBottom: '72px' }}
         >
           <p
-            className="text-sm font-semibold tracking-widest uppercase mb-3"
+            className="text-sm font-semibold tracking-widest uppercase !mb3"
             style={{ color: '#00d4ff' }}
           >
             Journey so far

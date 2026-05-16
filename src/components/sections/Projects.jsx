@@ -283,8 +283,8 @@ function ProjectCard({ p, index }) {
 // ─────────────────────────────────────────────────────────
 export default function Projects() {
   return (
-    <section id="projects" style={{ padding: '96px 48px' }}>
-      <div className="max-w-6xl mx-auto flex justify-center items-center flex-col">
+    <section id="projects" className='!px-2 !pt-20 flex flex-col justify-center items-center'>
+      <div className="max-w-6xl !mx-auto flex justify-center items-center flex-col">
 
         {/* Header */}
         <motion.div
